@@ -7,13 +7,13 @@ function App() {
 
     return (
         <>
-            <ul className="steps steps-vertical min-h-screen absolute left-4 -z-10 md:hidden">
+            <ul className="steps steps-vertical min-h-screen left-4 -z-10 md:hidden fixed">
                 <li className="step step-primary" />
                 <li className="step" />
                 <li className="step" />
                 <li className="step" />
             </ul>
-            <main className="flex px-4">
+            <main className="flex">
                 <BookingForm />
             </main>
         </>
