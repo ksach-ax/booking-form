@@ -1,4 +1,8 @@
+import type { ReactNode } from "react";
 import type { UseFormRegisterReturn } from "react-hook-form";
+import { RiPhoneFill } from "react-icons/ri";
+import { IoMdPerson } from "react-icons/io";
+import { BiSolidCarGarage } from "react-icons/bi";
 
 type LabelProps = {
     className: string;
@@ -17,6 +21,8 @@ type TextFieldsetProps = {
     inputClassName: string;
     labelClassName: string;
     registrationReturn: UseFormRegisterReturn;
+    placeholder?: string;
+    iconName?: string;
 };
 
 export function TextFieldset({
@@ -25,14 +31,36 @@ export function TextFieldset({
     inputClassName,
     labelClassName,
     registrationReturn,
+    placeholder,
+    iconName,
 }: TextFieldsetProps) {
+    let iconComponent: ReactNode;
+
+    switch (iconName) {
+        case "dealership":
+            iconComponent = <BiSolidCarGarage className="text-lg" />;
+            break;
+        case "contact_name":
+            iconComponent = <IoMdPerson className="text-lg" />;
+            break;
+        case "contact_phone":
+            iconComponent = <RiPhoneFill className="text-lg" />;
+            break;
+        default:
+            break;
+    }
+
     return (
         <fieldset className="fieldset">
-            <legend className="fieldset-legend">{legendText}</legend>
+            <div className="flex items-center gap-2">
+                {iconName && iconComponent}
+                <legend className="fieldset-legend">{legendText}</legend>
+            </div>
             <input
                 type="text"
                 className={inputClassName}
                 {...registrationReturn}
+                placeholder={placeholder}
             />
             <Label className={labelClassName} textContent={labelText} />
         </fieldset>
