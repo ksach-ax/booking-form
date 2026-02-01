@@ -1,0 +1,77 @@
+Abarth
+Alfa Romeo
+Alpina
+Alpine
+Aston Martin
+Audi
+Bentley
+BMW
+BYD
+Cadillac
+Chery
+Chevrolet
+Chrysler
+Citroen
+CUPRA
+Deepal
+Ferrari
+Fiat
+Ford
+Foton
+Geely
+Genesis
+GMC
+Great Wall
+GWM
+Haval
+Holden
+Holden Special Vehicles
+Honda
+Hyundai
+INEOS
+INFINITI
+Isuzu
+JAC
+Jaguar
+Jeep
+JMC
+KGM SsangYong
+Kia
+KTM
+Lamborghini
+Land Rover
+LDV
+Leapmotor
+Lexus
+Lotus
+Mahindra
+make
+Maserati
+Mazda
+McLaren
+Mercedes-Benz
+MG
+MINI
+Mitsubishi
+Morgan
+Nissan
+Peugeot
+Polestar
+Porsche
+RAM
+Renault
+Rolls-Royce
+SKODA
+Skywell
+Skyworth
+smart
+SsangYong
+Subaru
+Suzuki
+Tata
+Tesla
+Toyota
+Volkswagen
+Volvo
+XPeng
+Zeekr
