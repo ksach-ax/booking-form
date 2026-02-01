@@ -23,6 +23,16 @@ type TextFieldsetProps = {
     registrationReturn: UseFormRegisterReturn;
     placeholder?: string;
     iconName?: string;
+    inputMode?:
+        | "none"
+        | "text"
+        | "decimal"
+        | "numeric"
+        | "tel"
+        | "search"
+        | "email"
+        | "url";
+    addAsterisk?: boolean;
 };
 
 export function TextFieldset({
@@ -33,6 +43,8 @@ export function TextFieldset({
     registrationReturn,
     placeholder,
     iconName,
+    inputMode,
+    addAsterisk,
 }: TextFieldsetProps) {
     let iconComponent: ReactNode;
 
@@ -54,13 +66,17 @@ export function TextFieldset({
         <fieldset className="fieldset">
             <div className="flex items-center gap-2">
                 {iconName && iconComponent}
-                <legend className="fieldset-legend">{legendText}</legend>
+                <legend className="fieldset-legend">
+                    {legendText}
+                    {addAsterisk && <span className="text-red-500">*</span>}
+                </legend>
             </div>
             <input
                 type="text"
                 className={inputClassName}
                 {...registrationReturn}
                 placeholder={placeholder}
+                inputMode={inputMode || "text"}
             />
             <Label className={labelClassName} textContent={labelText} />
         </fieldset>
