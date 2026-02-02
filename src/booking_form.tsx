@@ -89,10 +89,10 @@ export function BookingForm({ setStep }: BookingFormProps) {
     return (
         <form
             onSubmit={handleSubmit(onSubmit, onError)}
-            className="snap-y snap-mandatory overflow-auto max-h-dvh w-full scroll-smooth"
+            className="snap-y snap-mandatory overflow-auto max-h-[calc(100dvh-48px)] top-12 fixed w-full scroll-smooth"
             ref={setRootRef}
         >
-            <section className="snap-start h-dvh pt-12 pl-24 pr-12">
+            <section className="snap-start h-[calc(100dvh-48px)] pt-2 pl-24 pr-12">
                 <div>
                     <TextFieldset
                         legendText="Dealership Name"
@@ -231,7 +231,7 @@ export function BookingForm({ setStep }: BookingFormProps) {
                 </div>
             </section>
 
-            <section className="snap-start h-dvh pt-12 pl-24 pr-12">
+            <section className="snap-start h-[calc(100dvh-48px)] pt-2 pl-24 pr-12">
                 <div>
                     <fieldset className="fieldset">
                         <legend className="fieldset-legend">

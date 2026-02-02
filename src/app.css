@@ -78,3 +78,7 @@
     --font-main: Fira Sans, sans-serif;
     --font-title: "Exo", sans-serif;
 }
+
+input {
+    font-family: var(--font-main) !important;
+}
