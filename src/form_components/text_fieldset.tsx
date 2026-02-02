@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 import type { UseFormRegisterReturn } from "react-hook-form";
 import { RiPhoneFill } from "react-icons/ri";
 import { IoMdPerson } from "react-icons/io";
-import { BiSolidCarGarage } from "react-icons/bi";
+import { BiSolidCalendarAlt, BiSolidCarGarage } from "react-icons/bi";
 
 type LabelProps = {
     className: string;
@@ -20,19 +20,20 @@ type TextFieldsetProps = {
     labelText: string;
     inputClassName: string;
     labelClassName: string;
-    registrationReturn: UseFormRegisterReturn;
+    registration: UseFormRegisterReturn;
     placeholder?: string;
     iconName?: string;
     inputMode?:
-        | "none"
-        | "text"
-        | "decimal"
-        | "numeric"
-        | "tel"
-        | "search"
-        | "email"
-        | "url";
+    | "none"
+    | "text"
+    | "decimal"
+    | "numeric"
+    | "tel"
+    | "search"
+    | "email"
+    | "url";
     addAsterisk?: boolean;
+    initialValue?: string;
 };
 
 export function TextFieldset({
@@ -40,11 +41,12 @@ export function TextFieldset({
     labelText,
     inputClassName,
     labelClassName,
-    registrationReturn,
+    registration,
     placeholder,
     iconName,
     inputMode,
     addAsterisk,
+    initialValue,
 }: TextFieldsetProps) {
     let iconComponent: ReactNode;
 
@@ -57,6 +59,9 @@ export function TextFieldset({
             break;
         case "contact_phone":
             iconComponent = <RiPhoneFill className="text-lg" />;
+            break;
+        case "year":
+            iconComponent = <BiSolidCalendarAlt className="text-lg" />;
             break;
         default:
             break;
@@ -74,9 +79,10 @@ export function TextFieldset({
             <input
                 type="text"
                 className={inputClassName}
-                {...registrationReturn}
+                {...registration}
                 placeholder={placeholder}
                 inputMode={inputMode || "text"}
+                value={initialValue || undefined}
             />
             <Label className={labelClassName} textContent={labelText} />
         </fieldset>
