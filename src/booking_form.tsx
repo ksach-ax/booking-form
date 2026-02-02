@@ -12,7 +12,8 @@ import type { Dispatch, SetStateAction } from "react";
 import { useOverflowScrollPosition } from "@n8tb1t/use-scroll-position";
 import { FaCarSide, FaChevronUp } from "react-icons/fa";
 import vehicleJSON from "./data/vehicles.json";
-import { RiShieldFill } from "react-icons/ri";
+import { RiSearchLine, RiShieldFill } from "react-icons/ri";
+import { BiChevronDown, BiChevronUp } from "react-icons/bi";
 
 const vehicleJSONData = vehicleJSON as Record<string, string[]>;
 const vehicleMakes: string[] = [];
@@ -59,6 +60,10 @@ const bookingDataSchema = z.object({
     vehicleMake: z.string().min(1, "Please enter the make of the vehicle."),
     vehicleModel: z.string().min(1, "Please enter the model of the vehicle."),
     vehicleYear: z.string().length(4, "Please enter the year of the vehicle."),
+    vehicleStockOrRego: z
+        .string()
+        .min(2, "Please enter the stock/rego of the vehicle."),
+    vehicleColor: z.optional(z.string()),
 });
 
 type BookingData = z.infer<typeof bookingDataSchema>;
@@ -92,7 +97,7 @@ export function BookingForm({ setStep }: BookingFormProps) {
             className="snap-y snap-mandatory overflow-auto max-h-[calc(100dvh-48px)] top-12 fixed w-full scroll-smooth"
             ref={setRootRef}
         >
-            <section className="snap-start h-[calc(100dvh-48px)] pt-2 pl-24 pr-12">
+            <section className="snap-start h-[calc(100dvh-48px)] pt-2 pl-24 pr-12 grid">
                 <div>
                     <TextFieldset
                         legendText="Dealership Name"
@@ -222,8 +227,8 @@ export function BookingForm({ setStep }: BookingFormProps) {
                             </div>
                         </div>
                     </fieldset>
-                    <div className="justify-center p-4 opacity-50 mx-auto md:hidden">
-                        <span className="text-xs flex justify-center items-center gap-1 animate-pulse text-center pr-8 ">
+                    <div className="justify-center pt-2 opacity-50 mx-auto md:hidden">
+                        <span className="text-xs flex justify-center items-center gap-1 animate-pulse text-center pr-8">
                             <strong>Swipe</strong> to continue
                             <FaChevronUp className="text-xl pl-1" />
                         </span>
@@ -231,7 +236,7 @@ export function BookingForm({ setStep }: BookingFormProps) {
                 </div>
             </section>
 
-            <section className="snap-start h-[calc(100dvh-48px)] pt-2 pl-24 pr-12">
+            <section className="snap-start h-[calc(100dvh-48px)] pt-2 pl-24 pr-12 grid">
                 <div>
                     <fieldset className="fieldset">
                         <legend className="fieldset-legend">
@@ -323,16 +328,72 @@ export function BookingForm({ setStep }: BookingFormProps) {
                         iconName="year"
                         initialValue={String(new Date().getFullYear())}
                     />
+
+                    <TextFieldset
+                        legendText="Stock#"
+                        labelText={
+                            errors.vehicleStockOrRego?.message ||
+                            "What should we use to identify the vehicle?"
+                        }
+                        registration={register("vehicleStockOrRego")}
+                        labelClassName={cn(
+                            "label",
+                            errors.vehicleStockOrRego && "text-red-500",
+                        )}
+                        inputClassName={cn(
+                            "input",
+                            errors.vehicleStockOrRego && "input-error",
+                        )}
+                        iconName="paperwork"
+                        placeholder="or Registration/VIN"
+                    />
+
+                    <TextFieldset
+                        legendText="Body colour"
+                        labelText={
+                            errors.vehicleStockOrRego?.message ||
+                            "Paint code if having parking sensors installed"
+                        }
+                        registration={register("vehicleStockOrRego")}
+                        labelClassName={cn(
+                            "label",
+                            errors.vehicleStockOrRego && "text-red-500",
+                        )}
+                        inputClassName={cn(
+                            "input",
+                            errors.vehicleStockOrRego && "input-error",
+                        )}
+                        iconName="paint"
+                    />
+                </div>
+
+                <div className="justify-center pt-2 opacity-50 mx-auto md:hidden">
+                    <span className="text-xs flex justify-center items-center gap-1 animate-pulse text-center pr-8">
+                        <strong>Swipe</strong> to continue
+                        <FaChevronUp className="text-xl pl-1" />
+                    </span>
                 </div>
             </section>
 
-            <section className="h-screen snap-start pt-16 grid">
-                <h2 className="py-4 font-title text-3xl font-bold">
-                    What would you like installed?
-                </h2>
-                <button type="submit" className="btn btn-primary">
-                    Submit
-                </button>
+            <section className="h-[calc(100dvh-48px)] snap-start pt-3 pl-16 pr-8">
+                <div className="card">
+                    <div className="join join-vertical">
+                        <p className="p-1 pl-4 bg-primary text-primary-content join-item text-sm">
+                            Search all products
+                        </p>
+                        <div>
+                            <label className="input join-item">
+                                <RiSearchLine className="opacity-60" />
+                                <input
+                                    type="text"
+                                    className="w-full grow"
+                                    placeholder="Start typing a product..."
+                                />
+                                <BiChevronDown className="opacity-60 text-lg" />
+                            </label>
+                        </div>
+                    </div>
+                </div>
             </section>
         </form>
     );

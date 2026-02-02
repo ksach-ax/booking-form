@@ -6,7 +6,7 @@ import { cn } from "./lib/cn";
 import { AnimatePresence, motion } from "motion/react";
 import { PiArrowLeft } from "react-icons/pi";
 const ORDER_TYPE_DESCRIPTIONS = {
-    dealer: "Dealership/PD booking",
+    dealer: "Dealer/PD booking",
     customer: "Customer direct booking",
     supply: "Supply only order",
 } as const;

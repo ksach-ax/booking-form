@@ -3,6 +3,8 @@ import type { UseFormRegisterReturn } from "react-hook-form";
 import { RiPhoneFill } from "react-icons/ri";
 import { IoMdPerson } from "react-icons/io";
 import { BiSolidCalendarAlt, BiSolidCarGarage } from "react-icons/bi";
+import { HiMiniDocumentCheck } from "react-icons/hi2";
+import { PiPaintBucketFill } from "react-icons/pi";
 
 type LabelProps = {
     className: string;
@@ -62,6 +64,12 @@ export function TextFieldset({
             break;
         case "year":
             iconComponent = <BiSolidCalendarAlt className="text-lg" />;
+            break;
+        case "paperwork":
+            iconComponent = <HiMiniDocumentCheck className="text-lg" />;
+            break;
+        case "paint":
+            iconComponent = <PiPaintBucketFill className="text-lg" />;
             break;
         default:
             break;
