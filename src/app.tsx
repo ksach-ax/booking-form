@@ -59,16 +59,12 @@ function App() {
                     >
                         <div className="breadcrumbs text-xs">
                             <ul>
-                                <li className="font-bold">
-                                    {ORDER_TYPE_DESCRIPTIONS[orderType]}
-                                </li>
-                                <li className="font-medium">
-                                    {orderSteps[orderType][step]}
-                                </li>
+                                <li className="font-bold">{ORDER_TYPE_DESCRIPTIONS[orderType]}</li>
+                                <li className="font-medium">{orderSteps[orderType][step]}</li>
                             </ul>
                         </div>
                         <span
-                            className="right-8 top-4 text-xs opacity-60 gap-1 flex items-center"
+                            className="right-8 top-4 text-xs opacity-60 gap-1 flex items-center cursor-pointer"
                             onClick={() => {
                                 setStarted(false);
                                 setStep(0);
@@ -79,7 +75,7 @@ function App() {
                         </span>
                     </motion.nav>
                     <motion.ul
-                        className="steps steps-vertical min-h-150 left-4 md:hidden absolute pointer-events-none"
+                        className="steps steps-vertical min-h-150 left-4 md:hidden absolute pointer-events-none -z-10"
                         initial={{ x: -100, opacity: 0 }}
                         animate={{ x: 0, opacity: 1 }}
                         transition={{ duration: 0.8, delay: 1 }}
@@ -87,19 +83,13 @@ function App() {
                         {[...Array(4)].map((_, index) => {
                             return (
                                 <li
-                                    className={cn(
-                                        "step",
-                                        index <= step && "step-primary",
-                                    )}
+                                    className={cn("step", index <= step && "step-primary")}
                                     key={index}
                                 ></li>
                             );
                         })}
                     </motion.ul>
-                    <main
-                        key="main-form"
-                        className="flex bg-base-200 font-display"
-                    >
+                    <main key="main-form" className="flex bg-base-200 font-display">
                         <BookingForm setStep={setStep} />
                     </main>
                 </motion.div>
@@ -135,9 +125,7 @@ function App() {
                             />
                         </figure>
                         <div className="card-body gap-4">
-                            <h2 className="card-title font-display text-xl">
-                                Order with us
-                            </h2>
+                            <h2 className="card-title font-display text-xl">Order with us</h2>
                             <p className="pb-2 opacity-60">
                                 Select from the below options to get started
                             </p>
@@ -149,18 +137,10 @@ function App() {
                                 >
                                     Book at dealership/pre-delivery
                                 </button>
-                                <button
-                                    className="btn-primary btn btn-block"
-                                    onClick={handleStart}
-                                    value="customer"
-                                >
+                                <button className="btn-disabled btn btn-block" value="customer">
                                     Book with customer
                                 </button>
-                                <button
-                                    className="btn-primary btn btn-block"
-                                    onClick={handleStart}
-                                    value="supply"
-                                >
+                                <button className="btn-disabled btn btn-block" value="supply">
                                     Create a supply only order
                                 </button>
                             </div>

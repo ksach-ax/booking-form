@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 import type { UseFormRegisterReturn } from "react-hook-form";
 import { RiPhoneFill } from "react-icons/ri";
 import { IoMdPerson } from "react-icons/io";
-import { BiSolidCalendarAlt, BiSolidCarGarage } from "react-icons/bi";
+import { BiSolidCalendarAlt, BiSolidCarGarage, BiSolidReceipt } from "react-icons/bi";
 import { HiMiniDocumentCheck } from "react-icons/hi2";
 import { PiPaintBucketFill } from "react-icons/pi";
 
@@ -25,17 +25,10 @@ type TextFieldsetProps = {
     registration: UseFormRegisterReturn;
     placeholder?: string;
     iconName?: string;
-    inputMode?:
-    | "none"
-    | "text"
-    | "decimal"
-    | "numeric"
-    | "tel"
-    | "search"
-    | "email"
-    | "url";
+    inputMode?: "none" | "text" | "decimal" | "numeric" | "tel" | "search" | "email" | "url";
     addAsterisk?: boolean;
     initialValue?: string;
+    inputType?: React.HTMLInputTypeAttribute;
 };
 
 export function TextFieldset({
@@ -49,6 +42,7 @@ export function TextFieldset({
     inputMode,
     addAsterisk,
     initialValue,
+    inputType,
 }: TextFieldsetProps) {
     let iconComponent: ReactNode;
 
@@ -71,6 +65,9 @@ export function TextFieldset({
         case "paint":
             iconComponent = <PiPaintBucketFill className="text-lg" />;
             break;
+        case "order":
+            iconComponent = <BiSolidReceipt className="text-lg" />;
+            break;
         default:
             break;
     }
@@ -85,12 +82,12 @@ export function TextFieldset({
                 </legend>
             </div>
             <input
-                type="text"
                 className={inputClassName}
                 {...registration}
                 placeholder={placeholder}
                 inputMode={inputMode || "text"}
                 value={initialValue || undefined}
+                type={inputType || "text"}
             />
             <Label className={labelClassName} textContent={labelText} />
         </fieldset>

@@ -1,40 +1,9 @@
 {
-    "Abarth": [
-        "124",
-        "595",
-        "500e",
-        "695"
-    ],
-    "Alfa Romeo": [
-        "4C",
-        "Giulia",
-        "Giulietta",
-        "Stelvio",
-        "Tonale"
-    ],
-    "Alpina": [
-        "B3",
-        "B4",
-        "B5",
-        "B7",
-        "B8",
-        "XD3",
-        "XB7"
-    ],
-    "Alpine": [
-        "A110"
-    ],
-    "Aston Martin": [
-        "DB11",
-        "DBS",
-        "DBX",
-        "DB12",
-        "Rapide",
-        "V12",
-        "V8",
-        "Vanquish",
-        "Vantage"
-    ],
+    "Abarth": ["124", "595", "500e", "695"],
+    "Alfa Romeo": ["4C", "Giulia", "Giulietta", "Stelvio", "Tonale"],
+    "Alpina": ["B3", "B4", "B5", "B7", "B8", "XD3", "XB7"],
+    "Alpine": ["A110"],
+    "Aston Martin": ["DB11", "DBS", "DBX", "DB12", "Rapide", "V12", "V8", "Vanquish", "Vantage"],
     "Audi": [
         "A1",
         "A3",
@@ -79,12 +48,7 @@
         "e-tron",
         "e-tron GT"
     ],
-    "Bentley": [
-        "Bentayga",
-        "Continental",
-        "Flying Spur",
-        "Mulsanne"
-    ],
+    "Bentley": ["Bentayga", "Continental", "Flying Spur", "Mulsanne"],
     "BMW": [
         "1 Series",
         "2 Series",
@@ -123,35 +87,11 @@
         "i5",
         "iX2"
     ],
-    "BYD": [
-        "ATTO 3",
-        "Dolphin",
-        "E6",
-        "Seal",
-        "SEALION 6",
-        "SHARK 6",
-        "SEALION 7",
-        "T3"
-    ],
-    "Cadillac": [
-        "LYRIQ"
-    ],
-    "Chery": [
-        "OMODA 5",
-        "OMODA E5",
-        "Tiggo 7 Pro",
-        "Tiggo 4 Pro",
-        "Tiggo 8 Pro Max"
-    ],
-    "Chevrolet": [
-        "Camaro",
-        "Corvette",
-        "Silverado",
-        "Silverado HD"
-    ],
-    "Chrysler": [
-        "300"
-    ],
+    "BYD": ["ATTO 3", "Dolphin", "E6", "Seal", "SEALION 6", "SHARK 6", "SEALION 7", "T3"],
+    "Cadillac": ["LYRIQ"],
+    "Chery": ["OMODA 5", "OMODA E5", "Tiggo 7 Pro", "Tiggo 4 Pro", "Tiggo 8 Pro Max"],
+    "Chevrolet": ["Camaro", "Corvette", "Silverado", "Silverado HD"],
+    "Chrysler": ["300"],
     "Citroen": [
         "Berlingo",
         "C3",
@@ -163,16 +103,8 @@
         "Dispatch",
         "Grand C4 Picasso"
     ],
-    "CUPRA": [
-        "Ateca",
-        "Born",
-        "Formentor",
-        "Leon",
-        "Tavascan"
-    ],
-    "Deepal": [
-        "S07"
-    ],
+    "CUPRA": ["Ateca", "Born", "Formentor", "Leon", "Tavascan"],
+    "Deepal": ["S07"],
     "Ferrari": [
         "12Cilindri",
         "296 GTB",
@@ -200,14 +132,7 @@
         "SF90 XX Stradale",
         "SF90 XX Spider"
     ],
-    "Fiat": [
-        "500",
-        "500C",
-        "500X",
-        "500e",
-        "Doblo",
-        "Ducato"
-    ],
+    "Fiat": ["500", "500C", "500X", "500e", "Doblo", "Ducato"],
     "Ford": [
         "EcoSport",
         "Escape",
@@ -226,27 +151,11 @@
         "Transit Custom",
         "Tourneo"
     ],
-    "Foton": [
-        "Sauvana",
-        "Tunland",
-        "View"
-    ],
-    "Geely": [
-        "EX5"
-    ],
-    "Genesis": [
-        "G80",
-        "G70",
-        "GV80",
-        "GV70",
-        "GV60"
-    ],
-    "GMC": [
-        "Yukon"
-    ],
-    "Great Wall": [
-        "Steed"
-    ],
+    "Foton": ["Sauvana", "Tunland", "View"],
+    "Geely": ["EX5"],
+    "Genesis": ["G80", "G70", "GV80", "GV70", "GV60"],
+    "GMC": ["Yukon"],
+    "Great Wall": ["Steed"],
     "GWM": [
         "Cannon",
         "Cannon Alpha",
@@ -259,14 +168,7 @@
         "Tank 500",
         "Ute"
     ],
-    "Haval": [
-        "H2",
-        "H6",
-        "H8",
-        "H9",
-        "H6GT",
-        "Jolion"
-    ],
+    "Haval": ["H2", "H6", "H8", "H9", "H6GT", "Jolion"],
     "Holden": [
         "Astra",
         "Acadia",
@@ -284,24 +186,8 @@
         "Trax",
         "Ute"
     ],
-    "Holden Special Vehicles": [
-        "Clubsport",
-        "Colorado",
-        "GTS",
-        "Maloo",
-        "Senator"
-    ],
-    "Honda": [
-        "Accord",
-        "City",
-        "Civic",
-        "CR-V",
-        "HR-V",
-        "Jazz",
-        "NSX",
-        "Odyssey",
-        "ZR-V"
-    ],
+    "Holden Special Vehicles": ["Clubsport", "Colorado", "GTS", "Maloo", "Senator"],
+    "Honda": ["Accord", "City", "Civic", "CR-V", "HR-V", "Jazz", "NSX", "Odyssey", "ZR-V"],
     "Hyundai": [
         "Accent",
         "Elantra",
@@ -325,35 +211,11 @@
         "iMax",
         "i20"
     ],
-    "INEOS": [
-        "Grenadier"
-    ],
-    "INFINITI": [
-        "Q30",
-        "Q50",
-        "Q60",
-        "Q70",
-        "QX30",
-        "QX70",
-        "QX80"
-    ],
-    "Isuzu": [
-        "D-MAX",
-        "MU-X"
-    ],
-    "JAC": [
-        "T9"
-    ],
-    "Jaguar": [
-        "E-PACE",
-        "F-PACE",
-        "F-TYPE",
-        "I-PACE",
-        "XE",
-        "XF",
-        "XJ",
-        "XJR"
-    ],
+    "INEOS": ["Grenadier"],
+    "INFINITI": ["Q30", "Q50", "Q60", "Q70", "QX30", "QX70", "QX80"],
+    "Isuzu": ["D-MAX", "MU-X"],
+    "JAC": ["T9"],
+    "Jaguar": ["E-PACE", "F-PACE", "F-TYPE", "I-PACE", "XE", "XF", "XJ", "XJR"],
     "Jeep": [
         "Avenger",
         "Cherokee",
@@ -363,15 +225,8 @@
         "Renegade",
         "Wrangler"
     ],
-    "JMC": [
-        "Vigus"
-    ],
-    "KGM SsangYong": [
-        "Korando",
-        "Musso",
-        "Rexton",
-        "Torres"
-    ],
+    "JMC": ["Vigus"],
+    "KGM SsangYong": ["Korando", "Musso", "Rexton", "Torres"],
     "Kia": [
         "Carnival",
         "Cerato",
@@ -392,15 +247,8 @@
         "Seltos",
         "Stonic"
     ],
-    "KTM": [
-        "X-BOW"
-    ],
-    "Lamborghini": [
-        "Aventador",
-        "Huracan",
-        "Revuelto",
-        "Urus"
-    ],
+    "KTM": ["X-BOW"],
+    "Lamborghini": ["Aventador", "Huracan", "Revuelto", "Urus"],
     "Land Rover": [
         "Discovery",
         "Discovery Sport",
@@ -423,9 +271,7 @@
         "eT60",
         "eDeliver 7"
     ],
-    "Leapmotor": [
-        "C10"
-    ],
+    "Leapmotor": ["C10"],
     "Lexus": [
         "CT",
         "ES",
@@ -443,24 +289,8 @@
         "RZ",
         "UX"
     ],
-    "Lotus": [
-        "Elise",
-        "Evora",
-        "Exige",
-        "Emira",
-        "Eletre",
-        "Emeya"
-    ],
-    "Mahindra": [
-        "Genio",
-        "PIK-UP",
-        "Scorpio",
-        "XUV500",
-        "XUV700"
-    ],
-    "make": [
-        "family"
-    ],
+    "Lotus": ["Elise", "Evora", "Exige", "Emira", "Eletre", "Emeya"],
+    "Mahindra": ["Genio", "PIK-UP", "Scorpio", "XUV500", "XUV700"],
     "Maserati": [
         "Ghibli",
         "GranCabrio",
@@ -551,14 +381,7 @@
         "ZS EV",
         "ZST"
     ],
-    "MINI": [
-        "Aceman",
-        "Clubman",
-        "Convertible",
-        "Countryman",
-        "Cooper",
-        "Hatch"
-    ],
+    "MINI": ["Aceman", "Clubman", "Convertible", "Countryman", "Cooper", "Hatch"],
     "Mitsubishi": [
         "ASX",
         "Eclipse Cross",
@@ -570,9 +393,7 @@
         "Pajero Sport",
         "Triton"
     ],
-    "Morgan": [
-        "Plus 4"
-    ],
+    "Morgan": ["Plus 4"],
     "Nissan": [
         "370Z",
         "Altima",
@@ -605,24 +426,9 @@
         "e-2008",
         "e-Partner"
     ],
-    "Polestar": [
-        "2",
-        "3",
-        "4"
-    ],
-    "Porsche": [
-        "718",
-        "911",
-        "Cayenne",
-        "Macan",
-        "Panamera",
-        "Taycan"
-    ],
-    "RAM": [
-        "1500",
-        "2500",
-        "3500"
-    ],
+    "Polestar": ["2", "3", "4"],
+    "Porsche": ["718", "911", "Cayenne", "Macan", "Panamera", "Taycan"],
+    "RAM": ["1500", "2500", "3500"],
     "Renault": [
         "Arkana",
         "Captur",
@@ -637,14 +443,7 @@
         "Trafic",
         "Zoe"
     ],
-    "Rolls-Royce": [
-        "Cullinan",
-        "Dawn",
-        "Ghost",
-        "Phantom",
-        "Spectre",
-        "Wraith"
-    ],
+    "Rolls-Royce": ["Cullinan", "Dawn", "Ghost", "Phantom", "Spectre", "Wraith"],
     "SKODA": [
         "Enyaq",
         "Fabia",
@@ -657,23 +456,10 @@
         "Scala",
         "Yeti"
     ],
-    "Skywell": [
-        "EC11"
-    ],
-    "Skyworth": [
-        "BE11"
-    ],
-    "smart": [
-        "#1",
-        "#3"
-    ],
-    "SsangYong": [
-        "Korando",
-        "Musso",
-        "Rexton",
-        "Tivoli",
-        "Tivoli XLV"
-    ],
+    "Skywell": ["EC11"],
+    "Skyworth": ["BE11"],
+    "smart": ["#1", "#3"],
+    "SsangYong": ["Korando", "Musso", "Rexton", "Tivoli", "Tivoli XLV"],
     "Subaru": [
         "BRZ",
         "Crosstrek",
@@ -697,15 +483,8 @@
         "Swift",
         "Vitara"
     ],
-    "Tata": [
-        "Xenon"
-    ],
-    "Tesla": [
-        "Model S",
-        "Model X",
-        "Model 3",
-        "Model Y"
-    ],
+    "Tata": ["Xenon"],
+    "Tesla": ["Model S", "Model X", "Model 3", "Model Y"],
     "Toyota": [
         "86",
         "Aurion",
@@ -775,11 +554,7 @@
         "XC90",
         "XC40"
     ],
-    "XPeng": [
-        "G6"
-    ],
-    "Zeekr": [
-        "9",
-        "X"
-    ]
+    "XPeng": ["G6"],
+    "Zeekr": ["9", "X"]
 }
+

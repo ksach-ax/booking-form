@@ -1,0 +1,268 @@
+[
+    {
+        "productName": "BlackVue Elite+ Gold Front & Rear Dash Cameras",
+        "productCode": "BVGELITEFRSF",
+        "productDesc": "Dealership exclusive",
+        "iconName": "bvg_elite_fr",
+        "featured": true,
+        "category": "dash_cams",
+        "isSupplyOnlyItem": false,
+        "comingSoon": false
+    },
+    {
+        "productName": "BlackVue Elite+ Gold Front Only Dash Camera",
+        "productCode": "BVGELITEFSF",
+        "productDesc": "Dealership exclusive",
+        "iconName": "bvg_elite_f",
+        "featured": false,
+        "category": "dash_cams",
+        "isSupplyOnlyItem": false,
+        "comingSoon": false
+    },
+    {
+        "productName": "BlackVue Elite 9 Front & Rear Dash Cameras",
+        "productCode": "BVELITE9FRSF",
+        "productDesc": "4K Premium quality",
+        "iconName": "bv_elite9_fr",
+        "featured": false,
+        "category": "dash_cams",
+        "isSupplyOnlyItem": false,
+        "comingSoon": false
+    },
+    {
+        "productName": "BlackVue Elite 9 Front Only Dash Camera",
+        "productCode": "BVELITE9FSF",
+        "productDesc": "4K Premium quality",
+        "iconName": "bv_elite9_f",
+        "featured": false,
+        "category": "dash_cams",
+        "isSupplyOnlyItem": false,
+        "comingSoon": false
+    },
+    {
+        "productName": "Roadview M4 4K Front & Rear Dash Cameras",
+        "productCode": "GON4FRDVRSF",
+        "productDesc": "4K w/ 128gb SD",
+        "iconName": "gon4_fr",
+        "featured": true,
+        "category": "dash_cams",
+        "isSupplyOnlyItem": false,
+        "comingSoon": false
+    },
+    {
+        "productName": "Roadview MX 1080p Front & Rear Dash Cameras",
+        "productCode": "GONXFRDVRSF",
+        "productDesc": "1080p Budget alternative",
+        "iconName": "gonx_fr",
+        "featured": false,
+        "category": "dash_cams",
+        "isSupplyOnlyItem": false,
+        "comingSoon": false
+    },
+    {
+        "productName": "Roadview Alpha Front & Rear Dash Camera",
+        "productCode": "RVALPHASF",
+        "productDesc": "4K Small & easy to use",
+        "iconName": "rv_alpha",
+        "featured": true,
+        "category": "dash_cams",
+        "isSupplyOnlyItem": false,
+        "comingSoon": true
+    },
+    {
+        "productName": "Roadview Stealth Front & Rear Dash Camera",
+        "productCode": "RVSTEALTHFRSF",
+        "productDesc": "4K Low-profile",
+        "iconName": "rv_stealth",
+        "featured": true,
+        "category": "dash_cams",
+        "isSupplyOnlyItem": false,
+        "comingSoon": true
+    },
+    {
+        "productName": "FineVu GX4K Front & Rear Dash Camera",
+        "productCode": "FVGX4KSF",
+        "productDesc": "4K Budget alternative",
+        "iconName": "fv_gx4k_fr",
+        "featured": false,
+        "category": "dash_cams",
+        "isSupplyOnlyItem": false,
+        "comingSoon": false
+    },
+    {
+        "productName": "Small Battery Upgrade - Cellink Neo 6 Slim",
+        "productCode": "CELLINK6SSF",
+        "productDesc": "~10-14 hours",
+        "iconName": "cellink_6s",
+        "featured": false,
+        "category": "dash_cam_accessories",
+        "isSupplyOnlyItem": false,
+        "comingSoon": false
+    },
+    {
+        "productName": "Large Battery Upgrade - BlackVue B-130A",
+        "productCode": "B-130ASF",
+        "productDesc": "~12-17 hours",
+        "iconName": "b130a",
+        "featured": false,
+        "category": "dash_cam_accessories",
+        "isSupplyOnlyItem": false,
+        "comingSoon": false
+    },
+    {
+        "productName": "BlackVue Cloud Module - Mobile Cloud Upgrade ",
+        "productCode": "CM100LTESF",
+        "productDesc": "Bring your own data sim",
+        "iconName": "cm100_lte",
+        "featured": false,
+        "category": "dash_cam_accessories",
+        "isSupplyOnlyItem": false,
+        "comingSoon": false
+    },
+    {
+        "productName": "Stealstopper - Anti-theft Device",
+        "productCode": "STEALSTOPSF",
+        "productDesc": "24-hour support",
+        "iconName": "stealstopper",
+        "featured": true,
+        "category": "security_gps",
+        "isSupplyOnlyItem": false,
+        "comingSoon": false
+    },
+    {
+        "productName": "Phantom - GPS Tracker",
+        "productCode": "PHANTOMSF",
+        "productDesc": "Powered by Stealstopper",
+        "iconName": "phantom",
+        "featured": false,
+        "category": "security_gps",
+        "isSupplyOnlyItem": false,
+        "comingSoon": false
+    },
+    {
+        "productName": "Roadview R-Series Digital Mirror",
+        "productCode": "RVMIRRORSF",
+        "productDesc": "Eliminate blind spots",
+        "iconName": "rv_mirror",
+        "featured": true,
+        "category": "reversing_safety_systems",
+        "isSupplyOnlyItem": false,
+        "comingSoon": false
+    },
+    {
+        "productName": "Parking Sensors - Front",
+        "productCode": "ZORGFRSENSSF",
+        "productDesc": "Colour coded to match",
+        "iconName": "front_sensors",
+        "featured": false,
+        "category": "reversing_safety_systems",
+        "isSupplyOnlyItem": false,
+        "comingSoon": false
+    },
+    {
+        "productName": "Parking Sensors - Rear",
+        "productCode": "AXREARSSF/PNT",
+        "productDesc": "Colour coded to match",
+        "iconName": "rear_sensors",
+        "featured": false,
+        "category": "reversing_safety_systems",
+        "isSupplyOnlyItem": false,
+        "comingSoon": false
+    },
+    {
+        "productName": "Reversing Camera System",
+        "productCode": "REVCAMSF",
+        "productDesc": "Many variants available",
+        "iconName": "rev_cam",
+        "featured": false,
+        "category": "reversing_safety_systems",
+        "isSupplyOnlyItem": false,
+        "comingSoon": false
+    },
+    {
+        "productName": "Pioneer 6.8\" AV Receiver",
+        "productCode": "DMHZ5350BTSF",
+        "productDesc": "Apple CarPlay™ & Android Auto",
+        "iconName": "dmhz5350bt",
+        "featured": false,
+        "category": "multimedia",
+        "isSupplyOnlyItem": false,
+        "comingSoon": false
+    },
+
+    {
+        "productName": "Pioneer 6.2\" Navigation Unit",
+        "productCode": "AVICZ730DABSF",
+        "productDesc": "GPS Navigation touchscreen",
+        "iconName": "avicz730dab",
+        "featured": false,
+        "category": "multimedia",
+        "isSupplyOnlyItem": false,
+        "comingSoon": false
+    },
+
+    {
+        "productName": "Pioneer 7\" Wireless Navigation Unit",
+        "productCode": "AVICZ930DABSF",
+        "productDesc": "Premium nav & mobile connectivity",
+        "iconName": "avicz930dab",
+        "featured": false,
+        "category": "multimedia",
+        "isSupplyOnlyItem": false,
+        "comingSoon": false
+    },
+
+    {
+        "productName": "Omni Smart Headrest System",
+        "productCode": "OMNISMARTSF",
+        "productDesc": "Best selling in-car entertainment",
+        "iconName": "omnismart",
+        "featured": false,
+        "category": "multimedia",
+        "isSupplyOnlyItem": false,
+        "comingSoon": false
+    },
+
+    {
+        "productName": "REDARC Tow-Pro Elite",
+        "productCode": "REDARCEBUSF",
+        "productDesc": "Electronic brake controller",
+        "iconName": "redarc_ebu",
+        "featured": false,
+        "category": "4wd_towing",
+        "isSupplyOnlyItem": false,
+        "comingSoon": false
+    },
+
+    {
+        "productName": "GME TX3100VP Super Compact UHF",
+        "productCode": "TX3100VPSF",
+        "productDesc": "Antenna included, full starter kit",
+        "iconName": "tx3100vp",
+        "featured": false,
+        "category": "4wd_towing",
+        "isSupplyOnlyItem": false,
+        "comingSoon": false
+    },
+
+    {
+        "productName": "Anderson Plugs (Specify for ESC)",
+        "productCode": "ANDERSONPKSF",
+        "productDesc": "Heavy-duty 12V connection points",
+        "iconName": "anderson_plug",
+        "featured": false,
+        "category": "4wd_towing",
+        "isSupplyOnlyItem": false,
+        "comingSoon": false
+    },
+    {
+        "productName": "Trailer Plug (Wiring harness required)",
+        "productCode": "TRAILERPLUGSF",
+        "productDesc": "ADR Compliant round/flat connectors available",
+        "iconName": "trailer_plug",
+        "featured": false,
+        "category": "4wd_towing",
+        "isSupplyOnlyItem": false,
+        "comingSoon": false
+    }
+]
