@@ -65,6 +65,10 @@ type BookingFormProps = {
 type Product = (typeof ProductList)[number];
 type BrowsingCategory = keyof typeof PRODUCT_CATEGORIES;
 
+function getProductImageUrl(code: string) {
+    return new URL(`./assets/product_icons/${code}.webp`, import.meta.url).href;
+}
+
 function getLocalStorageValue(key: string) {
     return localStorage.getItem(key);
 }
@@ -99,7 +103,7 @@ export function BookingForm({ setStep }: BookingFormProps) {
         control,
         getValues,
         setValue,
-        formState: { errors, isValid },
+        formState: { errors },
     } = useForm<BookingData>({ resolver: zodResolver(bookingDataSchema) });
 
     const selectedMake = watch("vehicleMake");
@@ -470,14 +474,16 @@ export function BookingForm({ setStep }: BookingFormProps) {
                                                 return (
                                                     <div
                                                         className="list-row hover:cursor-pointer hover:bg-secondary touch-pan-x dd_item items-center "
-                                                        key={`dd-${product.productCode}`}
+                                                        key={`dd - ${product.productCode}`}
                                                         onClick={() =>
                                                             addProduct(product.productCode)
                                                         }
                                                         id={`${product.productCode}`}
                                                     >
                                                         <img
-                                                            src={`/product_icons/${product.iconName}.webp`}
+                                                            src={getProductImageUrl(
+                                                                product.iconName,
+                                                            )}
                                                             alt={product.productCode}
                                                             className="w-8 aspect-square object-contain rounded-full bg-white p-1"
                                                         />
@@ -512,7 +518,7 @@ export function BookingForm({ setStep }: BookingFormProps) {
                                             return (
                                                 <motion.div
                                                     className="card border border-base-300 bg-base-100 list-row shadow-md card-side font-main"
-                                                    key={`cart-${product.productCode}`}
+                                                    key={`cart - ${product.productCode}`}
                                                     layout
                                                     transition={{ duration: 0.2 }}
                                                     initial={{ y: -150 }}
@@ -521,7 +527,9 @@ export function BookingForm({ setStep }: BookingFormProps) {
                                                 >
                                                     <figure className="max-w-24 flex-none">
                                                         <img
-                                                            src={`/product_icons/${product.iconName}.webp`}
+                                                            src={getProductImageUrl(
+                                                                product.iconName,
+                                                            )}
                                                             alt=""
                                                             className="object-contain bg-white p-2"
                                                         />
@@ -656,7 +664,7 @@ export function BookingForm({ setStep }: BookingFormProps) {
                             <input
                                 type="checkbox"
                                 {...register("vehicleHasCanopy")}
-                                className="toggle ml-2 "
+                                className="toggle toggle-accent ml-2 "
                             />
                         </p>
                         <p className="w-full flex justify-between">
@@ -664,7 +672,7 @@ export function BookingForm({ setStep }: BookingFormProps) {
                             <input
                                 type="checkbox"
                                 {...register("vehicleIsHybridEv")}
-                                className="toggle ml-2 "
+                                className="toggle toggle-warning ml-2 "
                             />
                         </p>
                         <textarea
@@ -740,11 +748,11 @@ export function BookingForm({ setStep }: BookingFormProps) {
                                             <div
                                                 className="card shadow-sm card-border bg-base-300 rounded-md h-50 select-none hover:border-primary hover:cursor-pointer active:scale-95"
                                                 onClick={() => addProduct(product.productCode)}
-                                                key={`product-${product.productCode}`}
+                                                key={`product - ${product.productCode}`}
                                             >
                                                 <figure className="w-full h-16 flex justify-start pl-4 join-item bg-white rounded">
                                                     <img
-                                                        src={`/product_icons/${product.iconName}.webp`}
+                                                        src={getProductImageUrl(product.iconName)}
                                                         alt=""
                                                         className="object-contain h-3/4 max-w-16"
                                                     />
@@ -776,7 +784,7 @@ export function BookingForm({ setStep }: BookingFormProps) {
                                     return (
                                         <a
                                             role="tab"
-                                            key={`tab-${categoryId}`}
+                                            key={`tab - ${categoryId}`}
                                             className={cn(
                                                 "tab snap-center text-nowrap text-xs font-bold",
                                                 browsingCategory === categoryId && "tab-active",
@@ -931,7 +939,7 @@ export function BookingForm({ setStep }: BookingFormProps) {
                                 return (
                                     <li className="list-row text-xs font-main border-x first-of-type:border-t last-of-type:border-b border-base-300 items-center min-h-10">
                                         <img
-                                            src={`/product_icons/${product.iconName}.webp`}
+                                            src={getProductImageUrl(product.iconName)}
                                             width="32"
                                         />
                                         <p className="list-col-grow text-[8pt] font-medium">
@@ -944,7 +952,12 @@ export function BookingForm({ setStep }: BookingFormProps) {
                                 );
                             })}
                         </ul>
-                        <button className="btn btn-primary btn-block">Send booking</button>
+                        <button
+                            className="btn btn-primary btn-block"
+                            onClick={handleSubmit(onSubmit)}
+                        >
+                            Send booking
+                        </button>
                     </div>
                 </div>
                 <label className="modal-backdrop" htmlFor="confirm-modal"></label>
