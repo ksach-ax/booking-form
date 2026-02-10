@@ -60,7 +60,9 @@ function App() {
                         <div className="breadcrumbs text-xs">
                             <ul>
                                 <li className="font-bold">{ORDER_TYPE_DESCRIPTIONS[orderType]}</li>
-                                <li className="font-medium">{orderSteps[orderType][step]}</li>
+                                <li className="font-medium md:hidden">
+                                    {orderSteps[orderType][step]}
+                                </li>
                             </ul>
                         </div>
                         <span

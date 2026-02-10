@@ -223,11 +223,14 @@ export function BookingForm({ setStep }: BookingFormProps) {
         <>
             <form
                 onSubmit={handleSubmit(onSubmit, onError)}
-                className="snap-y snap-mandatory overflow-auto max-h-[calc(100dvh-48px)] top-12 fixed w-full"
+                className="md:snap-none snap-y snap-mandatory overflow-auto max-h-[calc(100dvh-48px)] top-12 fixed w-full md:p-4 md:grid md:grid-cols-2 lg:grid-cols-4 "
                 ref={setRootRef}
             >
-                <section className="snap-start h-[calc(100dvh-48px)] pt-2 pl-24 pr-12 grid">
-                    <div>
+                <section className="snap-start h-[calc(100dvh-48px)] pt-2 pl-24 pr-12 md:p-4 justify-stretch ">
+                    <div className="w-full">
+                        <h2 className="hidden md:block font-bold font-title text-lg">
+                            Contact details
+                        </h2>
                         <TextFieldset
                             legendText="Dealership Name"
                             labelText={errors.dealershipName?.message || "Your dealership name"}
@@ -353,8 +356,11 @@ export function BookingForm({ setStep }: BookingFormProps) {
                     </div>
                 </section>
 
-                <section className="snap-start h-[calc(100dvh-48px)] pt-2 pl-24 pr-12 ">
+                <section className="snap-start h-[calc(100dvh-48px)] pt-2 pl-24 pr-12 md:p-4 justify-stretch">
                     <div>
+                        <h2 className="hidden md:block font-bold font-title text-lg">
+                            Vehicle Details
+                        </h2>
                         <fieldset className="fieldset">
                             <legend className="fieldset-legend">
                                 <RiShieldFill className="text-lg" />
@@ -449,9 +455,12 @@ export function BookingForm({ setStep }: BookingFormProps) {
                     </div>
                 </section>
 
-                <section className="h-[calc(100dvh-48px)] snap-start pt-3 pl-20 pr-8 flex flex-col">
+                <section className="h-[calc(100dvh-48px)] snap-start pt-3 pl-20 pr-8 flex flex-col md:w-full md:p-4">
                     <div className="w-full">
-                        <div className="join join-vertical w-full flex">
+                        <h2 className="hidden md:block font-bold font-title text-lg">
+                            Choose your products
+                        </h2>
+                        <div className="join join-vertical w-full flex md:pt-4">
                             <p className="p-2 pl-4 bg-primary text-primary-content join-item text-xs leading-none">
                                 Quick search all products
                             </p>
@@ -597,7 +606,8 @@ export function BookingForm({ setStep }: BookingFormProps) {
                     </div>
                 </section>
 
-                <section className="h-[calc(100dvh-48px)] snap-start pt-3 pl-20 pr-8 flex flex-col">
+                <section className="h-[calc(100dvh-48px)] snap-start pt-3 pl-20 pr-8 flex flex-col ">
+                    <h2 className="hidden md:block font-bold font-title text-lg">Finishing up</h2>
                     <TextFieldset
                         legendText="Purchase Order#"
                         labelText={
