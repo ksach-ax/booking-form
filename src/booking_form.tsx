@@ -717,7 +717,7 @@ export function BookingForm({ setStep }: BookingFormProps) {
                 className="modal-toggle"
             />
             <div className="modal z-30" role="dialog">
-                <div className="modal-box h-[calc(100dvh-120px)] p-0 rounded-md dark:border dark:border-base-200 max-w-lg overflow-visible">
+                <div className="modal-box h-[calc(100dvh-120px)] p-0 rounded-md dark:border dark:border-base-200 max-w-dvw md:max-w-lg overflow-visible">
                     <button
                         onClick={() => {
                             if (productModalToggle.current) {
